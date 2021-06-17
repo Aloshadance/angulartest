@@ -1,0 +1,40 @@
+<form class="filter-heroes">
+  <div class="field-row">
+    <div class="field">
+      Уровень героя:
+      <mat-label> от </mat-label>
+      <mat-form-field appearance="outline" class="filter-heroes-level">
+        <input matInput type="number" min="1" >
+      </mat-form-field>
+      <mat-label> до </mat-label>
+      <mat-form-field appearance="outline" class="filter-heroes-level">
+        <input matInput type="number" min="1">
+      </mat-form-field>
+    </div>
+
+    <div class="field">
+      Способности:
+      <mat-form-field appearance="outline">
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="field-row">
+    <div class="field">
+      Поиск по имени:
+      <mat-form-field appearance="outline">
+        <input matInput type="text">
+      </mat-form-field>
+    </div>
+
+    <div class="field">
+      Сортировать по возрастанию уровня:
+      <mat-checkbox class="example-margin"></mat-checkbox>
+    </div>
+  </div>
+
+</form>

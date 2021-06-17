@@ -1,0 +1,26 @@
+<form class="heroes-list">
+  <div class="all-heroes">
+    <div class="field-hero" *ngFor="let hero of heroes">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{hero.name}}
+          </mat-panel-title>
+          <mat-panel-description>
+            {{hero.level}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Сила: {{hero.power}}</p>
+        <p>Способности:</p>
+        <div class="field-skill">
+          <mat-card>some skill</mat-card>
+          <div class="button-field">
+            <a routerLink="/edit/{{hero.id}}">
+            <button mat-flat-button color="primary">Редактировать</button>
+            </a>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </div>
+  </div>
+</form>
